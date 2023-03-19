@@ -33,5 +33,7 @@ Now that you have data in your data lake storage, let’s create a unified catal
 7. On the **Review and create** screen of this crawler, review your settings and click **Create crawler**
 
 8. Back in the Crawlers window, select your crawler, i.e. `industrial-forum`, and click **Run crawler**:
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/108851851/226187582-02bcc1bf-8f78-4157-be85-a0edeab9891b.png">
 
 9. Wait ~2 minutes for the crawler to finish. Once it completes, you should see a table change and a partition change as displayed in the bottom right corner in the example below.
+
