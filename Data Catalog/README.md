@@ -14,7 +14,7 @@ Now that you have data in your data lake storage, let’s create a unified catal
 4. On the **Add a data source** screen:
 - Leave the `Data source` set to `S3`
 - Click **Browse S3** and click on the name of the S3 bucket used for this Immersion Day, `s3://awshk-industrial-forum-{aws-account-number}`
-- Click on the circle next to the `datalake` and select **Choose**
+- Click on the circle next to the `mytable` and select **Choose**
 - Select the Crawl all sub-folders option and click **Add an S3 data source**
 - Finally, click **Next**
 5. On the **Configure security settings** screen:
