@@ -24,7 +24,7 @@ export MY_ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output tex
 aws s3 mb s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID --region us-west-1
 
 cd ..
-aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/table" --recursive
+aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/mytable" --recursive
 
 ```
 
