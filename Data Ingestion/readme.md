@@ -6,7 +6,7 @@ In this lab, you will use AWS CloudShell to run commands using the AWS CLI (Comm
 
 ```
 export MY_ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
-
-aws s3 cp s3://kat-tame-bda-immersion/raw/2019 "s3://sdl-immersion-day-$MY_ACCOUNT_ID/raw/2019" --recursive
+aws s3 mb s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID --region us-west-1
+aws s3 cp s3://awshk-industrial-forum-2023/datalake "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/datalake" --recursive
 ```
 
