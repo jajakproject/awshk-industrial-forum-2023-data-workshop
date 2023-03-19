@@ -56,4 +56,22 @@ In this lab, you will create an AWS Glue transform job via Glue Studio  to perfo
 <img width="1076" alt="image" src="https://user-images.githubusercontent.com/108851851/226198225-83b6d5af-633d-4ebe-8ec6-29d05458b3ca.png">
 <img width="1078" alt="image" src="https://user-images.githubusercontent.com/108851851/226198244-b049e9d0-c74b-4ad4-9879-d3db2f5a53b4.png">
 3. When the job is finished (i.e. in a Stopped state), open the Amazon S3 Console  and verify the transformed files are now in your Amazon S3 bucket under the path s3://awshk-industrial-forum-2023-{aws-account-number}/mytable-parquet/
+<img width="1071" alt="image" src="https://user-images.githubusercontent.com/108851851/226198492-cc5e5e72-012f-4b4e-ba03-b88f2587edef.png">
 
+## Check the difference with Athena
+1. Open **Athena Console**
+2. Open **Query editor**, click Refresh icon next to Data
+3. In Database, select `ecommerce-data`
+4. Run the following Query
+```SQL
+SELECT * FROM "ecommerce-data"."mytable" where Month = 'Feb';
+```
+5. Click + sign on the top right hand corner of the query editor
+6. Run the following Query on the new editor
+```SQL
+SELECT * FROM "ecommerce-data"."mytable-parquet" where Month = 'Feb';
+```
+7. You can observe that data scanned from transformed data is much lower. 
+- Parquet is a more storage efficient format for columnarized data
+- Compression in the Glue job further reduced data size
+- Partition on `Month` allows Athena query engine to on scan data in the correct partitions
