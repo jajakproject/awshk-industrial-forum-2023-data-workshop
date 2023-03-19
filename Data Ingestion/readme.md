@@ -1,6 +1,8 @@
 In this lab, you will use AWS CloudShell to run commands using the AWS CLI (Command Line Interface). The below command copies the contents of an Amazon S3 bucket into the S3 bucket in your AWS account. This simulates the action of batch-ingesting data into your S3 Data Lake.
 
-1. In the AWS Console, navigate to AWS CloudShell  to trigger a new command line environment for you. Figure
+1. In the AWS Console, navigate to AWS CloudShell  to trigger a new command line environment for you. 
+<img width="1022" alt="image" src="https://user-images.githubusercontent.com/108851851/226184546-44ed3634-3f82-4f42-ae48-a62452e7682f.png">
+
 2. After some time, you will see the AWS CloudShell console as per the screenshot above.
 3. Copy and paste the following into CloudShell, which will automatically copy some content into your S3 bucket for this Immersion Day.
 
@@ -26,3 +28,11 @@ aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/datalake" -
 
 ```
 
+4. You should see this screen when all the commands finish
+<img width="963" alt="image" src="https://user-images.githubusercontent.com/108851851/226184686-627463e1-fc24-49dc-882b-4ab0c1d16c19.png">
+
+5. Go to S3 console, you should find a bucket called **awshk-industrial-forum-2023-\<Your AWS Account ID\>**
+<img width="1064" alt="image" src="https://user-images.githubusercontent.com/108851851/226185121-e5738b19-351e-485d-8e45-216c5e83e43d.png">
+
+6. Click into the bucket, you should find a folder called datalake and there are 10 csv files inside.
+<img width="1080" alt="image" src="https://user-images.githubusercontent.com/108851851/226185195-5ccb2ec4-c199-46a8-8d05-e496e41a9ed8.png">
