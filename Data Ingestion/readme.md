@@ -29,7 +29,7 @@ aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/mytable" --
 ```
 
 4. You should see this screen when all the commands finish
-<img width="963" alt="image" src="https://user-images.githubusercontent.com/108851851/226184686-627463e1-fc24-49dc-882b-4ab0c1d16c19.png">
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/108851851/226187129-d5637016-1fa6-4edf-898d-3a88eb48b59f.png">
 
 5. Go to S3 console, you should find a bucket called **awshk-industrial-forum-2023-\<Your AWS Account ID\>**
 <img width="1064" alt="image" src="https://user-images.githubusercontent.com/108851851/226185121-e5738b19-351e-485d-8e45-216c5e83e43d.png">
