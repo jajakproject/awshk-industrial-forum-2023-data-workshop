@@ -36,4 +36,6 @@ Now that you have data in your data lake storage, let’s create a unified catal
 <img width="1142" alt="image" src="https://user-images.githubusercontent.com/108851851/226187582-02bcc1bf-8f78-4157-be85-a0edeab9891b.png">
 
 9. Wait ~2 minutes for the crawler to finish. Once it completes, you should see a table change and a partition change as displayed in the bottom right corner in the example below.
+<img width="1119" alt="image" src="https://user-images.githubusercontent.com/108851851/226187777-89125b14-1c58-4cd7-85ad-a763ab7adc5c.png">
 
+Congratulations, you are now ready to query your data on AWS with Athena.
