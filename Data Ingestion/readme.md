@@ -24,7 +24,7 @@ export MY_ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output tex
 aws s3 mb s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID --region us-west-1
 
 cd ..
-aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/datalake" --recursive
+aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/table" --recursive
 
 ```
 
@@ -34,5 +34,5 @@ aws s3 cp datalake/ "s3://awshk-industrial-forum-2023-$MY_ACCOUNT_ID/datalake" -
 5. Go to S3 console, you should find a bucket called **awshk-industrial-forum-2023-\<Your AWS Account ID\>**
 <img width="1064" alt="image" src="https://user-images.githubusercontent.com/108851851/226185121-e5738b19-351e-485d-8e45-216c5e83e43d.png">
 
-6. Click into the bucket, you should find a folder called datalake and there are 10 csv files inside.
+6. Click into the bucket, you should find a folder called table and there are 10 csv files inside.
 <img width="1080" alt="image" src="https://user-images.githubusercontent.com/108851851/226185195-5ccb2ec4-c199-46a8-8d05-e496e41a9ed8.png">
