@@ -21,6 +21,31 @@ In the second part of today's workshop, we are going to use Amazon SageMaker Can
 4. Click **Add permissions**, choose **Attach policies**
 5. Tick **AmazonSageMakerCanvasFullAccess**, click **Add permissions**.
 
+# Setup CORS Policy to the S3 bucket
+SageMaker Canvas provides the capability to upload data stored locally to S3 via the Canvas UI. In order to do so, a CORS policy has to applied to the S3 bucket where you want to upload data (Canvas documentation  explains this in detail, if you want to learn more). Use the following procedure:
+
+1. First of all, head over to the S3 Console  and identify your SageMaker default bucket or any other bucket you'd like to use. In our case, we will choose the bucket called `sagemaker-[AWS-REGION]-[ACCOUNT-ID]`.
+2. Select it, then head over to the **Permissions**, and navigate until you reach the **Cross-origins resource sharing (CORS)**. Choose **Edit**.
+3. Add the following CORS policy:
+```JSON
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "POST"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+
+```
+4. Choose **Save changes**
+
 # Setup Canvas Permission
 1. Navigate to **SageMaker Console**
 2. Click **Domain** on the left menu
