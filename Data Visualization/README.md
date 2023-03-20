@@ -30,8 +30,10 @@
 8. Click the **Publish & visualize** button to be brought to the "Analysis" window where you can start creating your dashboard.
 9. Choose **Interactive sheet**
 10. In the lower left, set the Visual type to Horizontal bar chart (you must hover over the shapes to see their names).
-11. From the Field list, drag the department column to the Y-Axis box.
-12. From the Field list, drag the price column to the Value box.
-13. From the Field list, drag the product column to the Group/Color box.
-14. Left-click one of the horizontal bars in the chart and choose Focus only on ... (just to demo drill-down features)
-15. Your visualization should look something like the following:
+11. From the Field list, drag the `month` column to the Y-Axis box.
+12. From the Field list, drag the `revenue` column to the Value box.
+13. From the Field list, drag the `visitortype` column to the Group/Color box.
+14. Your visualization should look something like the following:
+<img width="1423" alt="image" src="https://user-images.githubusercontent.com/108851851/226233672-9d83ea93-467f-43ff-ac7d-460e0ad51f56.png">
+
+**Congratulations - you've now used Amazon QuickSight, a serverless data visualization service to explore your data.**
