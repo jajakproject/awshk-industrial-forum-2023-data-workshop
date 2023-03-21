@@ -1,4 +1,6 @@
-# awshk-industrial-forum-2023
+# Industrial Forum - Retail Hong Kong 2023
+This is a step by step guideline to setup a serverless data lake.
+Lab 1-4 are mandatory. Lab 5 is optional and lab 6 is mandatory if you are going to attend the SageMaker Canvas workshop.
 
 1. [Data Ingestion](https://github.com/jajakproject/awshk-industrial-forum-2023/tree/main/Data%20Ingestion)
 2. [Data Catalog](https://github.com/jajakproject/awshk-industrial-forum-2023/tree/main/Data%20Catalog)
